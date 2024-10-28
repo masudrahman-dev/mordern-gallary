@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --primary-color: #3498db;
+  --font-size-large: 1.5rem;
+}
+
+body {
+  font-family: "Big Shoulders Display", sans-serif;
+}
+
+/* h1 {
+  color: var(--primary-color);
+  font-size: var(--font-size-large);
+} */
+
+.hero_title {
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 88px;
+  color: white;
+}
+.hero_description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #444444;
+}
+
+.hero_section_container {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 47%,
+    rgba(255, 255, 255, 1) 47%
+  );
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.hero_section_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 100%;
+  
+}
+
+.image_container {
+  width: 800px;
+  max-height: 800px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero_section_img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0px auto 0px auto;
+  /* border: 1px solid gray; */
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  margin-top: 64px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 3.64px;
+  color: white;
+  background-color: #151515;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.our_location_text {
+  display: block;
+  padding: 24px;
+
+}
+
+.our_location_text_icon {
+  display: block;
+  font-size: 24px;
+  background-color: #d5966c;
+  color: white;
+  padding: 24px;
+}
